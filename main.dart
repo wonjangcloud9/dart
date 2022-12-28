@@ -1,6 +1,10 @@
-String capitalize(String? s) => s?.toUpperCase() ?? "No name";
+typedef ListOfInts = List<int>;
+
+ListOfInts reverseListOfNumbers(ListOfInts list) {
+  var reversed = list.reversed;
+  return reversed.toList();
+}
 
 void main() {
-  print(capitalize("john"));
-  print(capitalize(null));
+  print(reverseListOfNumbers([1, 2, 3]));
 }
