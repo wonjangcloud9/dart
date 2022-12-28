@@ -1,4 +1,6 @@
 void main() {
-  var name = "wonjang";
-  print(name);
+  dynamic name;
+  if (name is String) {
+    name.toUpperCase();
+  }
 }
