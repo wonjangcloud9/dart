@@ -1,5 +1,4 @@
 void main() {
-  String? wonjang = "wonjang";
-  wonjang = null;
-  wonjang?.isNotEmpty;
+  final name = "wonjang";
+  name = "wonjang2"; // Error: A final variable can only be set once.
 }
