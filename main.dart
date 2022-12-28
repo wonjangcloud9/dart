@@ -1,4 +1,5 @@
 void main() {
-  final name = "wonjang";
-  name = "wonjang2"; // Error: A final variable can only be set once.
+  late final String name;
+  name = 'John';
+  print(name);
 }
