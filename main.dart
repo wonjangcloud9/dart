@@ -1,6 +1,5 @@
 void main() {
-  dynamic name;
-  if (name is String) {
-    name.toUpperCase();
-  }
+  String? wonjang = "wonjang";
+  wonjang = null;
+  wonjang?.isNotEmpty;
 }
