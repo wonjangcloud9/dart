@@ -1,6 +1,4 @@
-String sayHello(String name) {
-  return 'Hello $name';
-}
+String sayHello(String name) => 'Hello $name';
 
 void main() {
   print(sayHello('John'));
