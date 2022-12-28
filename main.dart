@@ -1,7 +1,6 @@
-String sayHello(String name, int age, [String? country = "cuba"]) {
-  return "Hello $name, you are $age years old and you are from $country";
-}
+String capitalize(String? s) => s?.toUpperCase() ?? "No name";
 
 void main() {
-  print(sayHello("wonjang", 2));
+  print(capitalize("john"));
+  print(capitalize(null));
 }
