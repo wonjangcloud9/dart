@@ -1,3 +1,4 @@
 void main() {
-  print("Hello World");
+  var name = "wonjang";
+  print(name);
 }
