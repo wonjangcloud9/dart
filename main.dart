@@ -2,9 +2,19 @@ abstract class Animal {
   void makeSound();
 }
 
+class Strong {
+  final double strenghLevel = 1500.99;
+}
+
+class QuickRunner {
+  void run() {
+    print("I'm running");
+  }
+}
+
 enum Team { red, blue, green, yellow, purple }
 
-class Player extends Animal {
+class Player with Strong, QuickRunner implements Animal {
   String name;
   int age, xp;
   Team team;
