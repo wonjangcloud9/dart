@@ -19,7 +19,10 @@ class Player {
 }
 
 void main() {
-  Player player1 = Player(name: "John", age: 20, team: "Red Team", xp: 100);
+  Player player1 = Player(name: "John", age: 20, team: "Red Team", xp: 100)
+    ..name = "John Doe"
+    ..xp = 120000
+    ..team = "purple team";
   Player player2 = Player.createBluePlayer(name: "Jane", age: 21);
 
   player1.sayHello();
