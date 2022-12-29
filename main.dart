@@ -1,7 +1,9 @@
+enum Team { red, blue, green, yellow, purple }
+
 class Player {
   String name;
   int age, xp;
-  String team;
+  Team team;
 
   Player(
       {required this.name,
@@ -10,7 +12,7 @@ class Player {
       required this.xp});
 
   Player.createBluePlayer({required this.name, required this.age})
-      : team = "Blue Team",
+      : team = Team.blue,
         xp = 0;
 
   void sayHello() {
@@ -19,10 +21,10 @@ class Player {
 }
 
 void main() {
-  Player player1 = Player(name: "John", age: 20, team: "Red Team", xp: 100)
+  Player player1 = Player(name: "John", age: 20, team: Team.yellow, xp: 100)
     ..name = "John Doe"
-    ..xp = 120000
-    ..team = "purple team";
+    ..team = Team.purple
+    ..xp = 120000;
   Player player2 = Player.createBluePlayer(name: "Jane", age: 21);
 
   player1.sayHello();
