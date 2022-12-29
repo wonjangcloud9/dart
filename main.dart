@@ -1,6 +1,8 @@
 class Player {
-  String name = "wonjang";
-  int age = 30;
+  String name;
+  int age;
+
+  Player(this.name, this.age);
 
   void sayHello() {
     print("Hello $name");
@@ -8,7 +10,7 @@ class Player {
 }
 
 void main() {
-  Player player = Player();
+  Player player = Player("John", 20);
   print(player.name);
   print(player.age);
   player.sayHello();
