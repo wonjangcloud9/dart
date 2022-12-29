@@ -1,9 +1,18 @@
+abstract class Animal {
+  void makeSound();
+}
+
 enum Team { red, blue, green, yellow, purple }
 
-class Player {
+class Player extends Animal {
   String name;
   int age, xp;
   Team team;
+
+  @override
+  void makeSound() {
+    print("Hello $name from $team team with $xp xp and $age years old!");
+  }
 
   Player(
       {required this.name,
@@ -29,4 +38,5 @@ void main() {
 
   player1.sayHello();
   player2.sayHello();
+  player1.makeSound();
 }
